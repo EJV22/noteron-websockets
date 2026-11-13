@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1793762218689,
+      "tag": "0000_magenta_agent_brand",
+      "breakpoints": true
+    }
+  ]
+}
