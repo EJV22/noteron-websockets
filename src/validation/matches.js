@@ -21,8 +21,8 @@ export const createMatchSchema = z
         awayTeam: z.string().min(1),
         startTime: z.string(),
         endTime: z.string(),
-        homeScore: z.coerce.number().int().min(0).optional(),
-        awayScore: z.coerce.number().int().min(0).optional(),
+        homeScore: z.number().int().min(0).optional(),
+        awayScore: z.number().int().min(0).optional(),
     })
     .refine(
         (data) => {
@@ -45,6 +45,6 @@ export const createMatchSchema = z
     });
 
 export const updateScoreSchema = z.object({
-    homeScore: z.coerce.number().int().min(0),
-    awayScore: z.coerce.number().int().min(0),
+    homeScore: z.number().int().min(0),
+    awayScore: z.number().int().min(0),
 });
